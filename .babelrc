@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "react-native-web/babel",
+    "transform-inline-environment-variables"
+  ],
+  "presets": ["react-native"]
+}
