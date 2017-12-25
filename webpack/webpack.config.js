@@ -4,11 +4,12 @@ const plugins = ([new HtmlWebpackPlugin({
   template: './webpack/templates/index.html',
 })]);
 
-
 module.exports = {
-  entry: "./index.js",
+  entry: {
+    main: './index.js',
+  },
   output: {
-    filename: "bundle.js"
+    filename: 'bundle.js',
   },
   plugins,
   module: {
@@ -22,7 +23,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015'],
+          presets: ['react', 'es2015', 'stage-0'],
         },
       },
     ],

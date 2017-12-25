@@ -1,5 +1,5 @@
 import { AppRegistry, Platform } from 'react-native';
-import App from './App';
+import App from './src/App';
 
 AppRegistry.registerComponent('reactNativeAuthFirebase', () => App);
 
